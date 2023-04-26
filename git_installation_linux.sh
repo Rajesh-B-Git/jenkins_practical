@@ -17,7 +17,7 @@ fi
 }
 
 if [ $USERID -ne 0 ]; then
-	echo -e "${R} You need to be ROOT user to execute this script ${N}"
+	echo -e "${R} You need to be ROOT user to execute this script ${N}" 2>&1 | tee -a $LOG
 	exit 1
 fi
 
