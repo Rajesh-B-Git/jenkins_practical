@@ -42,6 +42,10 @@ amazon-linux-extras install java-openjdk11 -y &>>$LOG
 
 VALIDATE $? "Installing OpenJDK 11"
 
+dnf install java-11-amazon-corretto -y &>>$LOG
+
+VALIDATE $? "Installing OpenJDK 11 from Corretto"
+
 yum install jenkins -y &>>$LOG
 
 VALIDATE $? "Installing Jenkins"
