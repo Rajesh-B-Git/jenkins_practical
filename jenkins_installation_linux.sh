@@ -38,9 +38,9 @@ yum upgrade -y &>>$LOG
 
 VALIDATE $? "Upgrade YUM"
 
-amazon-linux-extras install java-openjdk11 -y &>>$LOG
+#amazon-linux-extras install java-openjdk11 -y &>>$LOG
 
-VALIDATE $? "Installing OpenJDK 11"
+#VALIDATE $? "Installing OpenJDK 11"
 
 dnf install java-11-amazon-corretto -y &>>$LOG
 
